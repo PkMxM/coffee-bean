@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+*{
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;   
+}
+
+p,
+input,
+label,
+span,
+a{
+    font-family: 'Open Sans', sans-serif;  
+}
+
+/* Header Area */
+.nav{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+/* combinater */
+/* parent child */
+.nav h1{
+    width: 50%;
+    float: left;
+}
+
+.nav ul{
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.nav li{
+    display: inline;
+    margin-left: 10px;
+}
+
+.nav a{
+    color: #312a26;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;   
+}
+
+.nav a:hover{
+    color: #c7a17a;
+}
+
+.nav h1 a{
+    text-transform: capitalize;
+}
+
+/* Banner Area */
+.banner{
+    height: 650px;
+    background-image: url("../image/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    margin-bottom: 5%;
+}
+
+.banner-text{
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 7.5%;
+}
+
+.banner h2{
+    color: #312a26;
+    font-size: 75px;
+    line-height: 75px;
+}
+
+.banner span{
+    font-family: 'Oswald', sans-serif;
+    color: #4caf50;
+}
+
+.banner p{
+    color: #312a26;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.banner a{
+    color: white;
+    background-color: #312a26;
+    padding: 15px 20px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    /* 1 value */
+    /* all sides */
+    /* padding: 20px; */
+
+    /* 2 value */
+    /* top&bottom , Left&Right sides */
+    /* padding: 10px 20px; */
+
+    /* 3 value */
+    /* top Left&Right bottom */
+    /* padding: 10px 20px; */    
+  
+    /* 4 value */
+    /* top Right bottom Left*/
+    /* padding: 10px 20px　15px 40px; */ 
+}
+
+.banner a:hover{
+    background-color: black;
+}
+
+/* Ads Area */
+.ads{
+    width: 85%;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%; */
+    margin: 0 auto 5%;
+    overflow: auto;
+}
+
+.ads .ads-box{
+    width: 49.5%;
+    height: 350px;
+    float: left;
+    background-color: gainsboro;
+}
+
+.ads-item1{
+    margin-right: 1%;
+    background-image: url(../image/ads1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ads-item2{
+    background-image: url(../image/ads2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.ads-text{
+    width: 25%;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+.ads-text h3{
+    color: white;
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.ads-text a{
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Merchandie Area */
+.div-title{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.div-title span{
+    color: #c7a17a;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.div-title h2{
+    color: #312a26;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.div-title hr{
+    width: 10%;
+    height: 4px;
+    background-color: #c7a17a;
+    /* border: 2px solid #c7a17a; */
+    margin: 0 auto;
+}
+
+/* Merch Gallery */
+.merch-gallery{
+    width: 85%;
+    margin: 0 auto 5%;
+    overflow: auto;
+}
+
+.merch-item{
+    width: 24.25%;
+    float: left;
+}
+
+.merch-item img{
+    width: 100%;
+}
+
+.item1,
+.item2,
+.item3,
+.item5,
+.item6,
+.item7{
+    margin-right: 1%;
+}
+
+.item1,
+.item2,
+.item3,
+.item4{
+    margin-bottom: 1%;
+}
+
+.merch-item h3{
+    color: #312a26;
+}
+
+.merch-item span,
+.merch-item p{
+    color: #c7a17a;
+}
+
+/* Ads Big Area */
+.ads-big{
+    width: 85%;
+    height: 400px;
+    margin: 0 auto 5%;
+    background-image: url(../image/ads-big.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.ads-big-text{
+    text-align: center;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+
+}
+
+.ads-big-text span{
+    color: #c7a17a;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.ads-big-text h2{
+    color: white;
+    font-size: 40px;
+}
+
+/* <a></a> inline element */
+.ads-big-text a{
+    color: #312a26;
+    background-color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.ads-item3{
+    margin-right: 1%;
+    background-image: url(../image/ads3.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1%;
+}
+
+.ads-item4{
+    background-image: url(../image/ads4.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1%;
+}
+.ads-item5{
+    margin-right: 1%;
+    background-image: url(../image/ads5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ads-item6{
+    background-image: url(../image/ads6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ads-big-text a:hover{
+    color: white;
+    background-color: #312a26;
+}
+
+/* Resrevation Area */
+.reservation{
+    width: 85%;
+    margin: 0 auto 5%;
+    overflow: auto;
+}
+
+.left,
+.right{
+    width: 49.5%;
+    background-color: #f2f2f2;
+    float: left;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.left{
+    margin-right: 1%;
+}
+
+.res-form label{
+    color: #312a26;
+    font-weight: 700;
+    display: block;
+}
+
+.res-form input,
+.res-form select,
+.res-form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #312a26;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+#am, /*radio */
+#pm, /*radio */
+#agree, /*checkbox */
+.res-form .inline{
+    display: inline;
+    width: auto ;
+}
+
+.res-form h3,
+.res-form p{
+    color: #312a26;
+    text-align: center;
+}
+
+.res-form .cards{
+    margin-bottom: 15px;
+}
+
+.res-form input[type=submit]{
+    background-color: #4caf50;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.res-form input[type=submit]:hover{
+    background-color: #103f12;
+}
+
+/* Footer1 Area */
+.footer1{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* background-color: #7e6b60; */
+    background-image: url(../image/footer-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-content{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+/* > direct child */
+.footer1 .footer-content > div{
+    width: 24.25%;
+    float: left;
+    /* background-color: gainsboro; */
+}
+
+.opening,
+.latest-post,
+.contact{
+    margin-right: 1%;
+}
+
+.footer-content h3{
+    color: white;
+    margin-bottom: 15px;
+}
+
+.opening th{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.opening td{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.latest-post h4{
+    color: white;
+}
+
+.latest-post p{
+    color: #c7a17a;
+}
+
+.contact .email{
+    color: #c7a17a;
+}
+
+.contact p{
+    color: white;
+    font-weight: 700;
+}
+
+.contact .std-post{
+    margin-top: 15px;
+}
+
+.contact input{
+    color: #312a26;
+    background-color: white;
+    padding: 10px;
+}
+
+.contact #search-btn:hover{
+    background-color: #c7a17a;
+}
+
+.contact #search-bth{
+    background-color: #72400d;
+}
+
+.location h4{
+    color: #c7a17a;
+    margin-top: 15px;
+}
+
+.location p{
+    color: white;
+    font-weight: 700;
+}
+
+/* Footer2 Area */
+.footer2{
+    background-color: black;
+}
+
+.logo h1{
+    color: white;
+    font-size: 24px;
+}
+
+.social ul{
+    margin-top: 5px;
+}
+
+.social li{
+    display: inline;
+    margin: 0 5px;
+}
+
+.social a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.copyright p{
+    color: white;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.footer2 .footer-content > div{
+    width: 32%;
+    float: left;
+}
+
+.logo,
+.social{
+    margin-right: 2%;
+}
+
+.social{
+    text-align: center;
+}
+
+.copyright{
+    text-align: right;
+}
